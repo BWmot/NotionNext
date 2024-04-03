@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 import { siteConfig } from '@/lib/config'
 import { useGlobal } from '@/lib/global'
-import { loadExternalResource } from '@/lib/utils'
+import { isMobile, loadExternalResource } from '@/lib/utils'
 import { useEffect } from 'react'
 
 /**
@@ -14,7 +14,7 @@ export default function Live2D() {
   const petLink = siteConfig('WIDGET_PET_LINK')
 
   useEffect(() => {
-    if (showPet) {
+    if (showPet && !isMobile()) {
       Promise.all([
         loadExternalResource('https://imuncle.github.io/live2d/js/live2d.js', 'js')
       ]).then((e) => {
