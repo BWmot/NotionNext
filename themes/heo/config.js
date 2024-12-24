@@ -23,6 +23,8 @@ const CONFIG = {
   HEO_HERO_TITLE_4: '游戏设计与体验',
   // HEO_HERO_TITLE_5: 'NotionNext4.0 轻松定制主题',
   HEO_HERO_TITLE_LINK: 'https://www.bwmol234.fun',
+  // 英雄区遮罩文字
+  HEO_HERO_COVER_TITLE: '随便逛逛',
 
   // 英雄区显示三个置顶分类
   HEO_HERO_CATEGORY_1: { title: '游戏开发', url: '/tag/游戏开发' },
